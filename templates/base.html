@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Blog Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Blog con Flask</h1>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

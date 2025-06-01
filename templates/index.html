@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a href="{{ url_for('add_post') }}">Agregar Nueva Entrada</a>
+<ul>
+    {% for post in posts %}
+    <li>
+        <h2>{{ post[1] }}</h2>
+        <p>{{ post[2] }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
